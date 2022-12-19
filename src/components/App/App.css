@@ -1,0 +1,32 @@
+html,body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+body {
+  background-image: url('https://img.freepik.com/free-photo/sunshine-clouds-sky-during-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1092.jpg?w=1380&t=st=1671206212~exp=1671206812~hmac=3b1a8016571d961e8a74cec9a61bcae66b61dece9bc910a8e37f9b5a3cf34629');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  flex-direction: column;
+ 
+
+}
+.App{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  
+  background-repeat: no-repeat;
+ 
+}
