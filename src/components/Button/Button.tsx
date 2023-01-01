@@ -1,5 +1,5 @@
 import React from 'react'
-import './Button.css'
+import './button.css'
 type ButtonProps = {
     text: string,
     handleClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import SearchBar from "../SearchBar/SearchBar";
-import WeatherCard from "../Card/Card";
+import "./app.css";
+import SearchBar from "../searchbar/SearchBar";
+import WeatherCard from '../card/Card';
 import {
   clear,
   cloudy,

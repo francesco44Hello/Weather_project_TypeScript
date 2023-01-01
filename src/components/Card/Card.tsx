@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from "../Button/Button"
-import './Card.css'
+import './card.css'
 
 type WeatherCardProps = {
     location: string;
