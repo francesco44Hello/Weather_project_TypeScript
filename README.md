@@ -3,7 +3,7 @@
 Weather App created using React and TypeScript. App created to practise TS and fetching from openweather API.
 
 ### Demo
-* [https://snap-vote.netlify.app/](https://snap-vote.netlify.app/)
+* [https://weather-project-type-script.vercel.app/](https://weather-project-type-script.vercel.app/)
 ### Usage:
 You'll need to get API KEY from API and add it to .env file.
 ```sh
