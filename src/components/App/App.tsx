@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./app.css";
-import SearchBar from "../searchbar/SearchBar";
-import WeatherCard from '../card/Card';
+import SearchBar from "../searchbar/searchbar";
+import WeatherCard from '../card/card';
 import {
   clear,
   cloudy,
@@ -9,7 +9,6 @@ import {
   snow,
   storm
 } from '../images/images'
-import { on } from "events";
 
 const Api_key = process.env.REACT_APP_WEATHER_API_KEY;
 
