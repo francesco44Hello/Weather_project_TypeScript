@@ -75,7 +75,7 @@ function App() {
   useEffect(() => {
     const fetchLocationData = async (): Promise<[]> => {
       const res = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=${Api_key}`
+        `http://api.openweathermap.org/geo/1.0/direct?q=${location}&appid=6970bc8ffe23898a8609feb406c89ae9`
       )
       const data = await res.json()
       //setLocationData(data);
