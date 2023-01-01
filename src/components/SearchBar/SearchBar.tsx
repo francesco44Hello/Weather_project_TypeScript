@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../button/button'
-import './SearchBar.css'
+import './searchbar.css'
 
 type SearchBarProps =  {
     text?: string,
