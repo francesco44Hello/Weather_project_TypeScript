@@ -12,5 +12,6 @@ const Button = ({text, handleClick, className}: ButtonProps) => {
             <button className={className} onClick={handleClick}>{text}</button>
     )
 }
+//
 
 export default Button
