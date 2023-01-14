@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+    {/* <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta> */}
     <App />
   </React.StrictMode>
 );
