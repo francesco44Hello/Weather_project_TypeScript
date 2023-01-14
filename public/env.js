@@ -1,1 +1,3 @@
-window.env = {};
+window.env = {
+  "REACT_APP_WEATHER_API_KEY": "ef4b607959de00363f23726135f20e07"
+};
