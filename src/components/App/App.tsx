@@ -102,7 +102,7 @@ function App() {
         setWeatherData(result);
         let temp = Math.round(result.main.temp) + '°C'
         let feelsLike = `Feels like: ${Math.round(result.main.feels_like)}°C`
-        let iconUrl = `http://openweathermap.org/img/w/${result.weather[0].icon}.png`
+        let iconUrl = `https://openweathermap.org/img/w/${result.weather[0].icon}.png`
         let mainCase = result.weather[0].main
 
         //console.log(mainCase)
