@@ -45,6 +45,11 @@ function App() {
   const [weatherData, setWeatherData] = useState<WeatherDataType>()
 
 
+  useEffect(() => {
+    document.title = 'Weather App'
+  }, []);
+
+
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     setValue(event.target.value);
     setLocation(event.target.value)
