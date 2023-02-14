@@ -60,6 +60,7 @@ function App() {
     setLocationName(location.charAt(0).toUpperCase() + location.slice(1))
     fetchWeatherData()
     console.log(weatherData)
+    fetchWeatherDataMoreDays()
   }
 
   function handleClickDegrees(): void {
@@ -75,7 +76,13 @@ function App() {
     setLocationName(location)
     fetchWeatherData()
   }
-
+  function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>){
+    if (event.key === "Enter") {
+      setValue("");
+      setLocationName(location)
+      fetchWeatherData()
+        }
+    }
 
   useEffect(() => {
     const fetchLocationData = async (): Promise<[]> => {
@@ -119,6 +126,28 @@ function App() {
       });
 
   }
+  async function fetchWeatherDataMoreDays() {
+    await fetch(
+      `api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid={API key}`
+    )
+      .then((res) => res.json())
+      .then((result) => {
+        setWeatherData(result);
+        console.log(result)
+        // let temp = Math.round(result.main.temp) + '°C'
+        // let feelsLike = `Feels like: ${Math.round(result.main.feels_like)}°C`
+        // let iconUrl = `https://openweathermap.org/img/w/${result.weather[0].icon}.png`
+        // let mainCase = result.weather[0].main
+
+        //console.log(mainCase)
+        // setTemperature(temp)
+        // setFeelsLike(feelsLike)
+        // setWeatherDescription(result.weather[0].description)
+        // setWeatherIcon(iconUrl)
+        // setMainCase(mainCase)
+      });
+
+  }
   switch (mainCase) {
 
     case 'Clouds':
@@ -152,6 +181,7 @@ function App() {
         handleChange={handleChange}
         handleClick={handleClick}
         value={value}
+        handleKey={handleKeyDown}
       />
       <WeatherCard
         icon={weatherIcon}
@@ -165,7 +195,6 @@ function App() {
         dateButtonText={dateButtonText}
         main={mainCase}
         background={background}
-
       />
     </div>
   );
